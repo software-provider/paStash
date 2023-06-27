@@ -1,0 +1,17 @@
+{
+  "name": "@pastash/filter_app_hsp",
+  "version": "1.0.3",
+  "description": "HSP Filter Plugin for @pastash/pastash",
+  "main": "filter_app_hsp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lorenzo Mangani <lorenzo.mangan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@qxip/bencode": "^1.0.0",
+    "http": "0.0.0",
+    "object.omit": "^3.0.0",
+    "qrelate": "^1.0.9"
+  }
+}

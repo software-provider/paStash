@@ -1,0 +1,3 @@
+#Firewall Custom
+MIKROTIKFWALL %{SYSLOGHOST:logsource} %{DATA:action}: in:%{DATA:in} out:%{DATA:out}( ,src-mac %{MAC:srcmac})?, proto %{GREEDYDATA:tcptype}, %{IP:srcip}(:%{POSINT:srcport})?->%{IP:dstip}(:%{POSINT:dstport})?, len %{NUMBER:len}
+MIKROTIKFWNOP %{SYSLOGHOST:logsource} %{DATA:action}: in:%{DATA:in}(%{DATA:in_if}) out:%{DATA:out}(%{GREEDYDATA:in_if}), src-mac %{MAC:srcmac}, proto %{DATA:tcptype}(%{GREEDYDATA:proto_ext}), %{IP:srcip}->%{IP:dstip}, len %{NUMBER:len}
